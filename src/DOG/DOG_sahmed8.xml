@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+    <category>MIATT.HW04.sahmed8</category>
+    <title>Difference of Gaussians</title>
+    <description>Applies a Difference of Gaussians (DoG) filter to a 3D volume.</description>
+    <version>1.0</version>
+    <documentation-url>N/A</documentation-url>
+    <license>MIT License</license>
+    <contributor>Sabbir Ahmed</contributor>
+    <acknowledgements>This command module used Insight Toolkit (ITK) to implement DoG filter.</acknowledgements>
+
+    <parameters>
+        <label>IO</label>
+        <description>Input/output parameters</description>
+        <image type="scalar">
+            <name>inputVolume</name>
+            <label>Input Volume</label>
+            <longflag>inputVolume</longflag>
+            <channel>input</channel>
+            <description>Input 3D volume</description>
+        </image>
+        <image type="scalar">
+            <name>outputVolume</name>
+            <label>Output Volume</label>
+            <longflag>outputVolume</longflag>
+            <channel>output</channel>
+            <description>Edge-enhanced DOG-filtered 3D output image</description>
+        </image>
+    </parameters>
+    <parameters>
+        <label>Filter Parameters</label>
+        <description>Parameters for the Gaussian filters</description>
+        <float>
+            <name>sigma1</name>
+            <longflag>sigma1</longflag>
+            <description>Sigma for the first Gaussian</description>
+            <default>0.0</default>
+        </float>
+        <float>
+            <name>sigma2</name>
+            <longflag>sigma2</longflag>
+            <description>Sigma for the second Gaussian</description>
+            <default>0.0</default>
+        </float>
+    </parameters>
+</executable>
