@@ -10,7 +10,7 @@
 #include "itkRescaleIntensityImageFilter.h"
 #include "itkCastImageFilter.h"
 
-#include "DOGCLP.h"
+#include "DOG_sahmed8CLP.h"
 
 int main(int argc, char* argv[]) {
   // Parse command line arguments generated from XML
