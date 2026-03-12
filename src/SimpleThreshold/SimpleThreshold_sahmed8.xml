@@ -3,12 +3,15 @@
     <category>MIATT.HW04.sahmed8</category>
     <title>SimpleThreshold</title>
     <description>
-        Simple thresholding of a 3D signed-short NIfTI image using ITK BinaryThresholdImageFilter.
+        Apply a threshold to a 3D signed-short NIfTI image using ITK BinaryThresholdImageFilter. Every voxel in the range [lowThreshold, highThreshold] is set to insideValue and all other voxels to outsideValue.
     </description>
     <version>1.0.0</version>
-    <documentation-url></documentation-url>
+    <documentation-url>N/A</documentation-url>
     <license>MIT License</license>
     <contributor>Sabbir Ahmed</contributor>
+    <acknowledgements>
+        The SimpleThreshold algorithm in this command module was implemented using Insight Toolkit (ITK).
+    </acknowledgements>
 
     <parameters>
         <label>IO</label>
@@ -66,7 +69,7 @@
             <longflag>insideValue</longflag>
             <label>Inside Value</label>
             <description>Value assigned inside the threshold range</description>
-            <default>1</default>
+            <default>0</default>
         </double>
 
     </parameters>
