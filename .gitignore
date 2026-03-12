@@ -41,3 +41,4 @@ CMakeFiles/*
 crash*
 
 Testing/Temporary/LastTest.log
+build/
