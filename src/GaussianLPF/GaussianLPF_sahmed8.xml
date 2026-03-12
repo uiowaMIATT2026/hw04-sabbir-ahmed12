@@ -17,6 +17,7 @@
 
         <image type="scalar" fileExtensions=".nii,.nii.gz,.nrrd,.mha,.mhd">
             <name>inputVolume</name>
+            <longflag>inputVolume</longflag>
             <label>Input Volume</label>
             <channel>input</channel>
             <description>Input 3D image volume</description>
@@ -24,6 +25,7 @@
 
         <image type="scalar" fileExtensions=".nii,.nii.gz,.nrrd,.mha,.mhd">
             <name>outputVolume</name>
+            <longflag>outputVolume</longflag>
             <label>Output Volume</label>
             <channel>output</channel>
             <description>Filtered 3D output image volume</description>
