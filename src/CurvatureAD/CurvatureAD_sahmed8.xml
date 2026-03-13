@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+    <category>MIATT.HW04.sahmed8</category>
+    <title>Curvature Anisotropic Diffusion Filter</title>
+    <description>Reduces noise while preserving edges using curvature-driven diffusion.</description>
+    <version>1.0</version>
+    <documentation-url>N/A</documentation-url>
+    <license>MIT License</license>
+    <contributor>Sabbir Ahmed</contributor>
+    <acknowledgements>This command line module used Insight Toolkit (ITK) to implement curvature-driven diffusion image filter.</acknowledgements>
+
+    <parameters>
+        <label>IO</label>
+        <description>Input/output parameters</description>
+        <image>
+            <name>inputVolume</name>
+            <label>Input Volume</label>
+            <channel>input</channel>
+            <longflag>inputVolume</longflag>
+            <description>Input volume to be filtered.</description>
+        </image>
+        <image>
+            <name>outputVolume</name>
+            <label>Output Volume</label>
+            <channel>output</channel>
+            <longflag>outputVolume</longflag>
+            <description>Filtered output volume.></description>
+        </image>
+    </parameters>
+
+    <parameters>
+        <label>Filter Parameters</label>
+        <description>Parameters for the curvature-driven diffusion filter.</description>
+        <double>
+            <name>conductance</name>
+            <longflag>conductance</longflag>
+            <label>Conductance</label>
+            <default>0.0</default>
+            <description>Controls the sensitivity to edges. Lower values preserve more detail.></description>
+        </double>
+        <double>
+            <name>timeStep</name>
+            <longflag>timeStep</longflag>
+            <label>Time Step</label>
+            <default>0.0</default>
+            <description>The integration time step.</description>
+        </double>
+        <integer>
+            <name>iterations</name>
+            <longflag>iterations</longflag>
+            <label>Iterations</label>
+            <default>0</default>
+            <description>Number of smoothing iterations to perform.</description>
+        </integer>
+    </parameters>
+
+</executable>
