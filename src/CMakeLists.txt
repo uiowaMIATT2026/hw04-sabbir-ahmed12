@@ -1,3 +1,4 @@
 add_subdirectory(SimpleThreshold)
 add_subdirectory(GaussianLPF)
 add_subdirectory(DOG)
+add_subdirectory(GradientAD)
