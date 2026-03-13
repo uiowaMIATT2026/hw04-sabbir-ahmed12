@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+    <category>MIATT.HW04.sahmed8</category>
+    <title>Gradient Anisotropic Diffusion</title>
+    <description>Applies Gradient Anisotropic Diffusion image filter to reduce noise.</description>
+    <version>1.0.0</version>
+    <documentation-url>N/A</documentation-url>
+    <license>MIT License</license>
+    <contributor>Sabbir Ahmed</contributor>
+    <acknowledgements>
+        This command line module uses Insight Toolkit (ITK) to implement Gradient Anisotropic Diffusion image filter.
+    </acknowledgements>
+
+    <parameters>
+        <label>IO</label>
+        <description>Input/output parameters</description>
+        <image>
+            <name>inputVolume</name>
+            <longflag>inputVolume</longflag>
+            <label>Input Volume</label>
+            <channel>input</channel>
+            <index>0</index>
+        </image>
+        <image>
+            <name>outputVolume</name>
+            <longflag>outputVolume</longflag>
+            <label>Output Volume</label>
+            <channel>output</channel>
+            <index>1</index>
+        </image>
+    </parameters>
+    <parameters>
+        <label>Filtering</label>
+        <description>Filter parameters</description>
+        <double>
+            <name>conductance</name>
+            <longflag>conductance</longflag>
+            <label>Conductance</label>
+            <default>0.0</default>
+        </double>
+        <double>
+            <name>timeStep</name>
+            <longflag>timeStep</longflag>
+            <label>Time Step</label>
+            <default>0.0</default>
+        </double>
+        <integer>
+            <name>iterations</name>
+            <longflag>iterations</longflag>
+            <label>Iterations</label>
+            <default>0</default>
+        </integer>
+    </parameters>
+</executable>
