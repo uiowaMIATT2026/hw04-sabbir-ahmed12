@@ -7,7 +7,7 @@
 #include "itkImageFileWriter.h"
 #include "itkGradientAnisotropicDiffusionImageFilter.h"
 
-#include "GradientAD_sahmed8CLP"
+#include "GradientAD_sahmed8CLP.h"
 
 int main(int argc, char* argv[]) {
   PARSE_ARGS;
