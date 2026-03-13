@@ -19,14 +19,12 @@
             <longflag>inputVolume</longflag>
             <label>Input Volume</label>
             <channel>input</channel>
-            <index>0</index>
         </image>
         <image>
             <name>outputVolume</name>
             <longflag>outputVolume</longflag>
             <label>Output Volume</label>
             <channel>output</channel>
-            <index>1</index>
         </image>
     </parameters>
     <parameters>
