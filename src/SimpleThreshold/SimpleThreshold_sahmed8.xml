@@ -46,6 +46,11 @@
             <label>Low Threshold</label>
             <description>Lower threshold</description>
             <default>0</default>
+            <constraints>
+                <minimum>-32768</minimum>
+                <maximum>32767</maximum>
+                <step>1</step>
+            </constraints>
         </double>
 
         <double>
@@ -54,6 +59,11 @@
             <label>High Threshold</label>
             <description>Upper threshold (inclusive)</description>
             <default>0</default>
+            <constraints>
+                <minimum>-32768</minimum>
+                <maximum>32767</maximum>
+                <step>1</step>
+            </constraints>
         </double>
 
         <double>
@@ -62,6 +72,11 @@
             <label>Outside Value</label>
             <description>Value assigned outside the threshold range</description>
             <default>0</default>
+            <constraints>
+                <minimum>-32768</minimum>
+                <maximum>32767</maximum>
+                <step>1</step>
+            </constraints>
         </double>
 
         <double>
@@ -70,6 +85,11 @@
             <label>Inside Value</label>
             <description>Value assigned inside the threshold range</description>
             <default>0</default>
+            <constraints>
+                <minimum>-32768</minimum>
+                <maximum>32767</maximum>
+                <step>1</step>
+            </constraints>
         </double>
 
     </parameters>

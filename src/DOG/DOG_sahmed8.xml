@@ -33,14 +33,26 @@
         <float>
             <name>sigma1</name>
             <longflag>sigma1</longflag>
-            <description>Sigma for the first Gaussian</description>
-            <default>0.0</default>
+            <label>Sigma 1</label>
+            <description>Sigma for the first (narrower) Gaussian. Must differ from Sigma 2.</description>
+            <default>1.0</default>
+            <constraints>
+                <minimum>0.1</minimum>
+                <maximum>10.0</maximum>
+                <step>0.1</step>
+            </constraints>
         </float>
         <float>
             <name>sigma2</name>
             <longflag>sigma2</longflag>
-            <description>Sigma for the second Gaussian</description>
-            <default>0.0</default>
+            <label>Sigma 2</label>
+            <description>Sigma for the second (wider) Gaussian. Must differ from Sigma 1.</description>
+            <default>2.0</default>
+            <constraints>
+                <minimum>0.1</minimum>
+                <maximum>10.0</maximum>
+                <step>0.1</step>
+            </constraints>
         </float>
     </parameters>
 </executable>

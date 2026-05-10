@@ -21,9 +21,8 @@ int main(int argc, char* argv[]) {
   }
 
   try {
-    using InputPixelType = float;
-    using OutputPixelType = float;
-    using ImageType = itk::Image<float, Dimension>;
+    using PixelType = float;
+    using ImageType = itk::Image<PixelType, Dimension>;
 
     using ReaderType = itk::ImageFileReader<ImageType>;
     using WriterType = itk::ImageFileWriter<ImageType>;

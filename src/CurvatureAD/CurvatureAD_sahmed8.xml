@@ -24,7 +24,7 @@
             <label>Output Volume</label>
             <channel>output</channel>
             <longflag>outputVolume</longflag>
-            <description>Filtered output volume.></description>
+            <description>Filtered output volume.</description>
         </image>
     </parameters>
 
@@ -35,22 +35,37 @@
             <name>conductance</name>
             <longflag>conductance</longflag>
             <label>Conductance</label>
-            <default>0.0</default>
-            <description>Controls the sensitivity to edges. Lower values preserve more detail.></description>
+            <default>3.0</default>
+            <description>Controls the sensitivity to edges. Lower values preserve more detail.</description>
+            <constraints>
+                <minimum>0.1</minimum>
+                <maximum>10.0</maximum>
+                <step>0.1</step>
+            </constraints>
         </double>
         <double>
             <name>timeStep</name>
             <longflag>timeStep</longflag>
             <label>Time Step</label>
-            <default>0.0</default>
-            <description>The integration time step.</description>
+            <default>0.0625</default>
+            <description>The integration time step. Must be less than 0.5/6 for 3D stability.</description>
+            <constraints>
+                <minimum>0.001</minimum>
+                <maximum>0.08</maximum>
+                <step>0.001</step>
+            </constraints>
         </double>
         <integer>
             <name>iterations</name>
             <longflag>iterations</longflag>
             <label>Iterations</label>
-            <default>0</default>
+            <default>5</default>
             <description>Number of smoothing iterations to perform.</description>
+            <constraints>
+                <minimum>1</minimum>
+                <maximum>100</maximum>
+                <step>1</step>
+            </constraints>
         </integer>
     </parameters>
 

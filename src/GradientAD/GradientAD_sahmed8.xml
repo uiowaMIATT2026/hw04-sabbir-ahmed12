@@ -34,19 +34,37 @@
             <name>conductance</name>
             <longflag>conductance</longflag>
             <label>Conductance</label>
-            <default>0.0</default>
+            <description>Controls the sensitivity to features. Higher values smooth more across edges.</description>
+            <default>3.0</default>
+            <constraints>
+                <minimum>0.1</minimum>
+                <maximum>10.0</maximum>
+                <step>0.1</step>
+            </constraints>
         </double>
         <double>
             <name>timeStep</name>
             <longflag>timeStep</longflag>
             <label>Time Step</label>
-            <default>0.0</default>
+            <description>Integration time step. Must be less than 0.5/6 for 3D stability.</description>
+            <default>0.0625</default>
+            <constraints>
+                <minimum>0.001</minimum>
+                <maximum>0.08</maximum>
+                <step>0.001</step>
+            </constraints>
         </double>
         <integer>
             <name>iterations</name>
             <longflag>iterations</longflag>
             <label>Iterations</label>
-            <default>0</default>
+            <description>Number of diffusion iterations to perform.</description>
+            <default>5</default>
+            <constraints>
+                <minimum>1</minimum>
+                <maximum>100</maximum>
+                <step>1</step>
+            </constraints>
         </integer>
     </parameters>
 </executable>

@@ -44,6 +44,11 @@
             <description>
                 Standard deviation of the Gaussian kernel. Must be greater than 0. The same sigma is applied in X, Y, and Z.
             </description>
+            <constraints>
+                <minimum>0.1</minimum>
+                <maximum>10.0</maximum>
+                <step>0.1</step>
+            </constraints>
         </double>
     </parameters>
 </executable>
